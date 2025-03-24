@@ -26,32 +26,34 @@ int pontosturisticos2;
 
 printf("Escolha uma letra de A a H para representar o primeiro estado.\n");
 printf("Estado: ");
-scanf(" %c", &estado1);
+scanf(" %c", &estado1); //%c para inserir um caractere
 
 printf("Escolha entre 01 a 04 para definir o numero da carta. \n");
 printf("Numero: ");
-scanf(" %2s", codigo1);
+scanf(" %2s", codigo1); //%2s para inseririr uma string de 2 caracteres
 
 printf("Insira o nome da primeira cidade.\n");
 printf("Nome da cidade: ");
-scanf("  %s", cidade1);
+scanf("  %s", cidade1); //$s para inserir uma string
 
    
 printf("Insira a quantidade de habitantes. \n");
 printf("População: ");
-scanf(" %d", &populacao1);
+scanf(" %d", &populacao1); //%d para inserir um numero interiro
 
 printf("Insira a área territorial da cidade. \n");
 printf("Área Km²: ");
-scanf(" %f", &area1);
+scanf(" %f", &area1); //%f para inserir um numero real
 
 printf("Insira o valor referente ao Produto Interno Bruto. \n");
 printf("PIB: ");
-scanf(" %f", &pib1);
+scanf(" %f", &pib1); //%f para inserir um numero real
 
 printf("Insira a quantidade de pontos turisticos: \n");
 printf("Pontos Turisticos: ");
-scanf(" %d", &pontosturisticos1);
+scanf(" %d", &pontosturisticos1); //%d para inserir um numero inteiro
+
+// Logo abaixo as variaveis densidade populacional e pib per capita que serao calculadas em tela
 
 densidadepopulacional1 =  populacao1 / area1;
 printf("Densidade Populacional e: %.2f\n", densidadepopulacional1);
@@ -63,31 +65,34 @@ printf("PIB per Capita e: %.2f reais\n", pibpercapita1);
 
 printf("Escolha uma letra de A a H para representar o segundo estado.\n");
 printf("Estado: ");
-scanf(" %c", &estado2);
+scanf(" %c", &estado2); //%c para inserir um caractere
+
 
 printf("Escolha entre 01 a 04 para definir o numero da carta. \n");
-printf("Numero: ");
-scanf(" %2s", codigo2);
+printf("Numero: "); 
+scanf(" %2s", codigo2); //%2s para inseririr uma string de 2 caracteres
 
 printf("Insira o nome da segunda cidade. \n");
-printf("Nome da cidade: ");
-scanf(" %s", cidade2);
+printf("Nome da cidade: "); 
+scanf(" %s", cidade2); //%s para inserir uma string
 
 printf("Insira a quantidade de habitantes. \n");
 printf("População: ");
-scanf(" %d", &populacao2);
+scanf(" %d", &populacao2); //%d prar inserir um numero inteiro
 
 printf("Insira área territorial da cidade. \n");
 printf("Área Km²: ");
-scanf(" %f", &area2);
+scanf(" %f", &area2); //%f para inserir um numero real
 
 printf("Insira o valor referente ao Produto Interno Bruto. \n");
 printf("PIB: ");
-scanf(" %f", &pib2);
+scanf(" %f", &pib2); //%f para inserir um numero real
 
 printf("Insira a quantidade de pontos turisticos: \n");
 printf("Pontos Turisticos: ");
-scanf(" %d", &pontosturisticos2);
+scanf(" %d", &pontosturisticos2); //para inserir um numero inteiro
+
+// Logo abaixo as variaveis densidade populacional e pib per capita que sera calculada em tela
 
 densidadepopulacional2 =  populacao2 / area2;
 printf("Densidade Populacional: %.2f\n", densidadepopulacional2);
@@ -124,6 +129,7 @@ printf("Foi utilizado o atributo 'População' para defeinir a carta vencedora\n
 printf("Carta 1:  %s", cidade1), - printf(" %d\n", populacao1);
 printf("Carta 2:  %s", cidade2), - printf(" %d\n", populacao2);
 
+// Abaixo a utilizaçao de um if para definir qual carta venceu a partida
 if (populacao1 > populacao2){
    printf("Carta 1 venceu: %s", cidade1), printf(" %dhab\n", populacao1);
 } else{
